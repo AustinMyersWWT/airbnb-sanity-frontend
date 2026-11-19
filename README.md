@@ -50,6 +50,21 @@ This repository supports the complete tutorial on building an AirBnb Clone with 
 └── package.json           # Project dependencies
 ```
 
+## ⚡ Developer quick start
+
+```bash
+npm install     # install dependencies
+npm run dev     # start the Next.js dev server at http://localhost:3000
+```
+
+Scripts defined in `package.json`:
+
+- `npm run dev` - run `next dev` with hot reloading
+- `npm run build` - create a production build with `next build`
+- `npm start` - serve the production build with `next start` (run `npm run build` first)
+
+There are no `test` or `lint` scripts. Create a `.env.local` first (see [Installation](#installation)).
+
 ## 🚀 Getting Started
 
 ### Prerequisites
