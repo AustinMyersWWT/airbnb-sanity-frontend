@@ -114,6 +114,16 @@ The project uses Sanity.io for content management. Configure your Sanity client 
 - Configure dataset (production/development)
 - Enable CDN for production
 
+### Sanity configuration
+
+`sanity.js` reads the following environment variables:
+
+| Variable | Default in `sanity.js` | Purpose |
+| --- | --- | --- |
+| `NEXT_PUBLIC_SANITY_DATASET` | `"production"` | Sanity dataset the client reads from. |
+| `NEXT_PUBLIC_SANITY_PROJECT_ID` | none (`undefined` if unset) | Sanity project ID. Required; no fallback is provided. |
+| `NODE_ENV` | none | Set automatically by Next.js. `useCdn` is `true` when it equals `"production"`, otherwise `false`. |
+
 ### Google Maps API
 
 To enable map features:
